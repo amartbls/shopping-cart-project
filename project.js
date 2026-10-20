@@ -197,4 +197,3 @@
     }
 ]
 cart = []
-console.log(msrpgraphicscardstore)
