@@ -210,9 +210,16 @@
         cart.push(graphicscardstore.find((card)=>card.name === itemname))
     }
     addtocart("RTX5090")
+    addtocart("RX9060XT")
+    addtocart("B580")
     console.log(cart)
     function removefromcart(itemname){
         cart.splice(cart.indexOf(itemname),1)
     }
     removefromcart("RTX5090")
     console.log(cart)
+    function totalcost(cart){
+        cost = 0
+        cart.forEach(card => {card.price });
+    }
+
