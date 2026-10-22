@@ -221,7 +221,7 @@
     function totalcost(cart){
         cost = 0
         i = 0
-        while(i+1<cart.length){
+        while(i+1<=cart.length){
             cost += cart[i].price
             i++
         }
