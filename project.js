@@ -217,9 +217,15 @@
         cart.splice(cart.indexOf(itemname),1)
     }
     removefromcart("RTX5090")
-    console.log(cart)
+    console.log(cart.length)
     function totalcost(cart){
         cost = 0
-        cart.forEach(card => {card.price });
+        i = 0
+        while(i+1<cart.length){
+            cost += cart[i].price
+            i++
+        }
+        return cost
     }
+    console.log(totalcost(cart))    
 
