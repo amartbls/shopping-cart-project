@@ -203,21 +203,14 @@
         function filterbyprice(minimum, maximum){
             return graphicscardstore.filter(card=>card.price >= minimum && card.price <= maximum )
         }
-    //console.log(filterbynbg('brand', 'INTELARC'))
-    //console.log(filterbyprice(400, 550))
     cart = []
     function addtocart(itemname){
         cart.push(graphicscardstore.find((card)=>card.name === itemname))
     }
-    addtocart("RTX5090")
-    addtocart("RX9060XT")
-    addtocart("B580")
-    console.log(cart)
     function removefromcart(itemname){
         cart.splice(cart.indexOf(itemname),1)
     }
     removefromcart("RTX5090")
-    console.log(cart.length)
     function totalcost(cart){
         cost = 0
         i = 0
@@ -227,5 +220,17 @@
         }
         return cost
     }
-    console.log(totalcost(cart))    
-
+function inject(itemname){
+    const container = document.querySelector(".container");
+    container.insertAdjacentHTML(
+        "beforeend",
+        '<div class="card">
+            <h2 class="itemname">${itemname}</h2>
+            <img src="" alt="${itemname}"/>
+            <h3 class="generation"></h3>
+            <h4 class="brand"></h4>
+            <h5 class="price"></h5>
+            <button class="+cart">Add to cart<button>
+        </div>',
+    );
+}
