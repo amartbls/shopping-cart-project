@@ -221,15 +221,16 @@
         return cost
     }
 function inject(itemname){
-    const container = document.querySelector(".container");
+    const container = Document.querySelector(".container");
+    let index = graphicscardstore.indexOf(String(itemname))
     container.insertAdjacentHTML(
         "beforeend",
-        `<!--<div class="Card">
+        `<div class="Card">
             <h2 class="itemname">${itemname}</h2>
-            <a src="" alt="${itemname}${" picture"}"/>
-            <h3 class="generation"></h3>
-            <h4 class="brand"></h4>
-            <h5 class="price"></h5>
-        </div> -->`,
+            <a src="${graphicscardstore[index].image}" alt="${itemname}${" picture"}"/>
+            <h3 class="price">${graphicscardstore[index].price}"</h3>
+            <button class="+cart">Add to Cart</button>
+        </div>`,
     );
 }
+inject(RTX5090)
