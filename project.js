@@ -224,13 +224,12 @@ function inject(itemname){
     const container = document.querySelector(".container");
     container.insertAdjacentHTML(
         "beforeend",
-        '<div class="card">
+        `<!--<div class="Card">
             <h2 class="itemname">${itemname}</h2>
-            <img src="" alt="${itemname}"/>
+            <a src="" alt="${itemname}${" picture"}"/>
             <h3 class="generation"></h3>
             <h4 class="brand"></h4>
             <h5 class="price"></h5>
-            <button class="+cart">Add to cart<button>
-        </div>',
+        </div> -->`,
     );
 }
