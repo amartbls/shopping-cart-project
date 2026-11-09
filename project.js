@@ -4,49 +4,49 @@
             ,brand: "NVIDIARTX"
             ,generation: "RTX50Series" 
             ,price: 1999
-            ,image: null
+            ,image: "https://www.zotac.com/download/files/styles/w1024/public/product_gallery/graphics_cards/zt-b50900b-10p-image01.jpg?itok=cif57HoU"
         }
         ,{
             name: "RTX5080"
             ,brand: "NVIDIARTX"
             ,generation: "RTX50Series"
             ,price: 999
-            ,image: null
+            ,image: "https://d2vfia6k6wrouk.cloudfront.net/productimages/09cfd7f3-797e-4cb0-ac0d-b3ca00a12e69/images/pny-rtx-5080-slim-dual-fan-oc-pk.jpg"
         }
         ,{
             name: "RTX5070TI"
             ,brand: "NVIDIARTX"
             ,generation: "RTX50Series"
             ,price: 749
-            ,image: null
+            ,image: "https://m.media-amazon.com/images/I/71YnD7X0ijL.jpg"
         }
         ,{
             name: "RTX5070" 
             ,brand: "NVIDIARTX"
             ,generation: "RTX50Series"
             ,price: 549
-            ,image: null
+            ,image: "https://d2vfia6k6wrouk.cloudfront.net/productimages/ec29d9c1-2797-44fc-a4b5-b3ca008fe05e/images/pny-rtx-5070-slim-dual-fan-oc-gr.jpg"
         }
         ,{
             name: "RTX5060TI16GB"
             ,brand: "NVIDIARTX"
             ,generation: "RTX50Series"
             ,price: 429
-            ,image: null
+            ,image: "https://m.media-amazon.com/images/I/81kYKB0Aj5L.jpg"
         }
         ,{
             name: "RTX5060TI8GB"
             ,brand: "NVIDIARTX"
             ,generation: "RTX50Series"
             ,price: 379
-            ,image: null
+            ,image: "https://m.media-amazon.com/images/I/81-KEx-lGSL.jpg"
         }
         ,{
             name: "RTX5060"
             ,brand: "NVIDIARTX"
             ,generation: "RTX50Series"
             ,price: 299
-            ,image: null
+            ,image: "https://m.media-amazon.com/images/I/71ii5ow8slL.jpg"
         }
         ,{
             name: "RTX5050"
@@ -221,16 +221,18 @@
         return cost
     }
 function inject(itemname){
-    const container = Document.querySelector(".container");
-    let index = graphicscardstore.indexOf(String(itemname))
+    const container = document.querySelector(".container");
+    let index = graphicscardstore.findIndex(graphicscard => graphicscard.name === itemname)
     container.insertAdjacentHTML(
         "beforeend",
         `<div class="Card">
-            <h2 class="itemname">${itemname}</h2>
-            <a src="${graphicscardstore[index].image}" alt="${itemname}${" picture"}"/>
-            <h3 class="price">${graphicscardstore[index].price}"</h3>
+            <h2 class="itemname" data-item="${itemname}">${itemname}</h2>
+            <img src="${graphicscardstore[index].image}" alt="${itemname}"/>
+            <h3 class="price">$ ${graphicscardstore[index].price}</h3>
             <button class="+cart">Add to Cart</button>
         </div>`,
     );
 }
-inject(RTX5090)
+for(i=0; i<=graphicscardstore.length; i++){
+    inject(graphicscardstore[i].name)
+}
