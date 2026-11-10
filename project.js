@@ -53,147 +53,140 @@
             ,brand: "NVIDIARTX"
             ,generation: "RTX50Series"
             ,price: 249
-            ,image: null
+            ,image: "https://m.media-amazon.com/images/I/71HQSXg4qVL.jpg"
         }
         ,{
             name: "RTX4060"
             ,brand: "NVIDIARTX"
             ,generation: "RTX40Series"
             ,price: 299
-            ,image: null
+            ,image: "https://m.media-amazon.com/images/I/71t1ClD2EtL.jpg"
         }
         ,{
             name: "RTX4060TI8GB"
             ,brand: "NVIDIARTX"
             ,generation: "RTX40Series"
             ,price: 399
-            ,image: null
+            ,image: "https://m.media-amazon.com/images/I/71QvZTnJm+L.jpg"
         }
         ,{
             name: "RTX4070"
             ,brand: "NVIDIARTX"
             ,generation: "RTX40Series"
             ,price: 599
-            ,image: null
+            ,image: "https://m.media-amazon.com/images/I/71liIYrRmkL.jpg"
         }
         ,{
             name: "RTX4070TI"
             ,brand: "NVIDIARTX"
             ,generation: "RTX40Series"
             ,price: 799
-            ,image: null
+            ,image: "https://m.media-amazon.com/images/I/71LtnjKmLBL.jpg"
         }
         ,{
             name: "RTX4080"
             ,brand: "NVIDIARTX"
             ,generation: "RTX40Series"
             ,price: 999
-            ,image: null
+            ,image: "https://m.media-amazon.com/images/I/71XIV5uLiSL.jpg"
         }
         ,{
             name: "RTX4090"
             ,brand: "NVIDIARTX"
             ,generation: "RTX40Series"
             ,price: 1599
-            ,image: null
+            ,image: "https://m.media-amazon.com/images/I/815d7TTP5UL.jpg"
         }
         ,{
             name: "RX9070XT" 
             ,brand: "RADEONRX"
             ,generation: "RX9000Series"
             ,price: 599
-            ,image: null
+            ,image: "https://m.media-amazon.com/images/I/81huTBuLV+L.jpg"
         }
         ,{
             name: "RX9070"
             ,brand: "RADEONRX"
             ,generation: "RX9000Series"
             ,price: 549
-            ,image: null
+            ,image: "https://m.media-amazon.com/images/I/817n67VXh1L.jpg"
         }
         ,{
             name: "RX9060XT"
             ,brand: "RADEONRX"
             ,generation: "RX9000Series"
             ,price: 349
-            ,image: null
-        }
-        ,{
-            name: "RX9060" 
-            ,brand: "RADEONRX"
-            ,generation: "RX9000Series"
-            ,price: 299
-            ,image: null
+            ,image: "https://m.media-amazon.com/images/I/71L08TQedJL._AC_UF894,1000_QL80_.jpg"
         }
         ,{
             name: "RX9050"
             ,brand: "RADEONRX"
             ,generation: "RX9000Series"
             ,price: 279
-            ,image: null
+            ,image: "https://cdn.videocardz.net/image/2026/07/asus-radeon-rx-9050-8gb-dual-oc-ba10-1200x900.jpg"
         }
         ,{
             name: "RX7900XTX" 
             ,brand: "RADEONRX"
             ,generation: "RX7000Series"
             ,price: 999
-            ,image: null
+            ,image: "https://m.media-amazon.com/images/I/71vGm7dSHoL.jpg"
         }
         ,{
             name: "RX7900XT"
             ,brand: "RADEONRX"
             ,generation: "RX7000Series"
             ,price: 899
-            ,image: null
+            ,image: "https://m.media-amazon.com/images/I/81ZBhhO35mL.jpg"
         }
         ,{
             name: "RX7900GRE"
             ,brand: "RADEONRX"
             ,generation: "RX7000Series"
             ,price: 549
-            ,image: null
+            ,image: "https://m.media-amazon.com/images/I/81jooy0ipEL.jpg"
         }
         ,{
             name: "RX7800XT" 
             ,brand: "RADEONRX"
             ,generation: "RX7000Series"
             ,price: 499
-            ,image: null
+            ,image: "https://m.media-amazon.com/images/I/61aQwrGeLCL.jpg"
         }
         ,{
             name: "RX7700XT"
             ,brand: "RADEONRX"
             ,generation: "RX7000Series"
             ,price: 449
-            ,image: null
+            ,image: "https://m.media-amazon.com/images/I/81wAjnVdS5L.jpg"
         }
         ,{
             name: "RX7600XT" 
             ,brand: "RADEONRX"
             ,generation: "RX7000Series"
             ,price: 329
-            ,image: null
+            ,image: "https://m.media-amazon.com/images/I/81XgnwQf-UL.jpg"
         }
         ,{
             name: "RX7600"
             ,brand: "RADEONRX"
             ,generation: "RX7000Series"
             ,price: 269
-            ,image: null
+            ,image: "https://m.media-amazon.com/images/I/81QItJufypL.jpg"
         }
         ,{
             name: "B570"
             ,brand: "INTELARC"
             ,generation: "BATTLEMAGE"
             ,price: 219
-            ,image: null
+            ,image: "https://m.media-amazon.com/images/I/71qcFgjH5zL.jpg"
         }
         ,{
             name: "B580"
             ,brand: "INTELARC"
             ,generation: "BATTLEMAGE"
             ,price: 249
-            ,image: null
+            ,image: "https://www.notebookcheck.net/fileadmin/_processed_/c/b/csm_B580_14_727ef6f1b3.jpg"
         }
     ]
     //nbg: name,brand,generation
@@ -227,8 +220,8 @@ function inject(itemname){
         "beforeend",
         `<div class="Card">
             <h2 class="itemname" data-item="${itemname}">${itemname}</h2>
-            <img src="${graphicscardstore[index].image}" alt="${itemname}"/>
             <h3 class="price">$ ${graphicscardstore[index].price}</h3>
+            <img src="${graphicscardstore[index].image}" alt="${itemname}"/>
             <button class="+cart">Add to Cart</button>
         </div>`,
     );
