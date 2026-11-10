@@ -1,8 +1,40 @@
+html body{
+    background-color: #e0e0e0;
+}
 .container{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 .Card{
+    border-radius: 25px ;
+    justify-content: space-evenly;
+    padding: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 100px;
+    width: 400px;
+    height: 400px;
     background-color: grey
-    ;
+}
+.Card h2{
+    font-size: 40px;
+}
+.Card h3{
+    
+    font-size: 30px;
+}
+.Card img{
+    width: 350px;
+    height: 240px;
+    border-radius: 15px;
+}
+.Card button{
+    border-radius:25px;
+    width: 350px;
+    background-color:#42b0f5;
+    font-size: 20px;
+}
+.Card button:hover{
+    background-color: #2b5aa6;
 }
