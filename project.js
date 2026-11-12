@@ -63,6 +63,13 @@
             ,image: "https://m.media-amazon.com/images/I/71t1ClD2EtL.jpg"
         }
         ,{
+            name: "RTX4060TI16GB"
+            ,brand: "NVIDIARTX"
+            ,generation: "RTX40Series"
+            ,price: 499
+            ,image: "https://m.media-amazon.com/images/I/71QZLPNFeNL._AC_SL1500_.jpg"
+        }
+        ,{
             name: "RTX4060TI8GB"
             ,brand: "NVIDIARTX"
             ,generation: "RTX40Series"
