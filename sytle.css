@@ -1,5 +1,36 @@
 html body{
     background-color: #e0e0e0;
+    font-family: "Syncopate", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+#titleblock{
+    display: flex;
+    width: 100vw;
+    text-align: left;
+    background-color: bisque;
+    align-items: center;
+}
+#title{
+    margin-left: 100px;
+    font-size: 100px;
+}
+#gotocart{
+    width: 150px;
+    height: 150px;
+    margin-left: 1750px;
+    border-radius: 50%;
+    background-color: black;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#gotocart img{
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
 }
 .container{
     display: flex;
@@ -18,11 +49,11 @@ html body{
     background-color: grey
 }
 .Card h2{
-    font-size: 40px;
+    font-size: 30px;
 }
 .Card h3{
     
-    font-size: 30px;
+    font-size: 20px;
 }
 .Card img{
     width: 350px;
@@ -33,7 +64,10 @@ html body{
     border-radius:25px;
     width: 350px;
     background-color:#42b0f5;
-    font-size: 20px;
+    font-size: 30px;
+    font-family: "Geo", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 .Card button:hover{
     background-color: #2b5aa6;
