@@ -17,9 +17,9 @@ html body{
     font-size: 100px;
 }
 #gotocart{
-    width: 150px;
-    height: 150px;
-    margin-left: 1750px;
+    width: 75px;
+    height: 75px;
+    margin-left: 1825px;
     border-radius: 50%;
     background-color: black;
     overflow: hidden;
@@ -27,9 +27,12 @@ html body{
     align-items: center;
     justify-content: center;
 }
+#gotocart:hover img{
+    filter: invert(100%);
+}
 #gotocart img{
-    width: 150px;
-    height: 150px;
+    width: 75px;
+    height: 75px;
     object-fit: cover;
 }
 .container{
