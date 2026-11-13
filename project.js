@@ -236,3 +236,5 @@ function inject(itemname){
 for(i=0; i<=graphicscardstore.length; i++){
     inject(graphicscardstore[i].name)
 }
+const button = document.querySelector(".+cart")
+button.addEventListener("click", addtocart(button.itemname))
