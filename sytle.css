@@ -16,25 +16,6 @@ html body{
     margin-left: 100px;
     font-size: 100px;
 }
-#gotocart{
-    width: 75px;
-    height: 75px;
-    margin-left: 1825px;
-    border-radius: 50%;
-    background-color: black;
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-#gotocart:hover img{
-    filter: invert(100%);
-}
-#gotocart img{
-    width: 75px;
-    height: 75px;
-    object-fit: cover;
-}
 .container{
     display: flex;
     flex-direction: row;
