@@ -4,196 +4,196 @@
             ,brand: "NVIDIARTX"
             ,generation: "RTX50Series" 
             ,price: 1999
-            ,image: "https://www.zotac.com/download/files/styles/w1024/public/product_gallery/graphics_cards/zt-b50900b-10p-image01.jpg?itok=cif57HoU"
+            ,image: "img/5090.jpg"
         }
         ,{
             name: "RTX5080"
             ,brand: "NVIDIARTX"
             ,generation: "RTX50Series"
             ,price: 999
-            ,image: "https://d2vfia6k6wrouk.cloudfront.net/productimages/09cfd7f3-797e-4cb0-ac0d-b3ca00a12e69/images/pny-rtx-5080-slim-dual-fan-oc-pk.jpg"
+            ,image: "img/5080.jpg"
         }
         ,{
             name: "RTX5070TI"
             ,brand: "NVIDIARTX"
             ,generation: "RTX50Series"
             ,price: 749
-            ,image: "https://m.media-amazon.com/images/I/71YnD7X0ijL.jpg"
+            ,image: "img/5070ti.jpg"
         }
         ,{
             name: "RTX5070" 
             ,brand: "NVIDIARTX"
             ,generation: "RTX50Series"
             ,price: 549
-            ,image: "https://d2vfia6k6wrouk.cloudfront.net/productimages/ec29d9c1-2797-44fc-a4b5-b3ca008fe05e/images/pny-rtx-5070-slim-dual-fan-oc-gr.jpg"
+            ,image: "img/5070.jpg"
         }
         ,{
             name: "RTX5060TI16GB"
             ,brand: "NVIDIARTX"
             ,generation: "RTX50Series"
             ,price: 429
-            ,image: "https://m.media-amazon.com/images/I/81kYKB0Aj5L.jpg"
+            ,image: "img/5060ti16gb.jpg"
         }
         ,{
             name: "RTX5060TI8GB"
             ,brand: "NVIDIARTX"
             ,generation: "RTX50Series"
             ,price: 379
-            ,image: "https://m.media-amazon.com/images/I/81-KEx-lGSL.jpg"
+            ,image: "img/5060ti8gb.jpg"
         }
         ,{
             name: "RTX5060"
             ,brand: "NVIDIARTX"
             ,generation: "RTX50Series"
             ,price: 299
-            ,image: "https://m.media-amazon.com/images/I/71ii5ow8slL.jpg"
+            ,image: "img/5060.jpg"
         }
         ,{
             name: "RTX5050"
             ,brand: "NVIDIARTX"
             ,generation: "RTX50Series"
             ,price: 249
-            ,image: "https://m.media-amazon.com/images/I/71HQSXg4qVL.jpg"
+            ,image: "img/5050.jpg"
         }
         ,{
             name: "RTX4060"
             ,brand: "NVIDIARTX"
             ,generation: "RTX40Series"
             ,price: 299
-            ,image: "https://m.media-amazon.com/images/I/71t1ClD2EtL.jpg"
-        }
-        ,{
-            name: "RTX4060TI16GB"
-            ,brand: "NVIDIARTX"
-            ,generation: "RTX40Series"
-            ,price: 499
-            ,image: "https://m.media-amazon.com/images/I/71QZLPNFeNL._AC_SL1500_.jpg"
+            ,image: "img/4060.jpg"
         }
         ,{
             name: "RTX4060TI8GB"
             ,brand: "NVIDIARTX"
             ,generation: "RTX40Series"
             ,price: 399
-            ,image: "https://m.media-amazon.com/images/I/71QvZTnJm+L.jpg"
+            ,image: "img/4060ti8gb.jpg"
+        }
+        ,{
+            name: "RTX4060TI16GB"
+            ,brand: "NVIDIARTX"
+            ,generation: "RTX40Series"
+            ,price: 499
+            ,image: "img/4060ti16gb.jpg"
         }
         ,{
             name: "RTX4070"
             ,brand: "NVIDIARTX"
             ,generation: "RTX40Series"
             ,price: 599
-            ,image: "https://m.media-amazon.com/images/I/71liIYrRmkL.jpg"
+            ,image: "img/4070.jpg"
         }
         ,{
             name: "RTX4070TI"
             ,brand: "NVIDIARTX"
             ,generation: "RTX40Series"
             ,price: 799
-            ,image: "https://m.media-amazon.com/images/I/71LtnjKmLBL.jpg"
+            ,image: "img/4070ti.jpg"
         }
         ,{
             name: "RTX4080"
             ,brand: "NVIDIARTX"
             ,generation: "RTX40Series"
             ,price: 999
-            ,image: "https://m.media-amazon.com/images/I/71XIV5uLiSL.jpg"
+            ,image: "img/4080.jpg"
         }
         ,{
             name: "RTX4090"
             ,brand: "NVIDIARTX"
             ,generation: "RTX40Series"
             ,price: 1599
-            ,image: "https://m.media-amazon.com/images/I/815d7TTP5UL.jpg"
+            ,image: "img/4090.jpg"
         }
         ,{
             name: "RX9070XT" 
             ,brand: "RADEONRX"
             ,generation: "RX9000Series"
             ,price: 599
-            ,image: "https://m.media-amazon.com/images/I/81huTBuLV+L.jpg"
+            ,image: "img/9070xt.jpg"
         }
         ,{
             name: "RX9070"
             ,brand: "RADEONRX"
             ,generation: "RX9000Series"
             ,price: 549
-            ,image: "https://m.media-amazon.com/images/I/817n67VXh1L.jpg"
+            ,image: "img/9070.jpg"
         }
         ,{
             name: "RX9060XT"
             ,brand: "RADEONRX"
             ,generation: "RX9000Series"
             ,price: 349
-            ,image: "https://m.media-amazon.com/images/I/71L08TQedJL._AC_UF894,1000_QL80_.jpg"
+            ,image: "img/9060xt.jpg"
         }
         ,{
             name: "RX9050"
             ,brand: "RADEONRX"
             ,generation: "RX9000Series"
             ,price: 279
-            ,image: "https://cdn.videocardz.net/image/2026/07/asus-radeon-rx-9050-8gb-dual-oc-ba10-1200x900.jpg"
+            ,image: "img/9050.jpg"
         }
         ,{
             name: "RX7900XTX" 
             ,brand: "RADEONRX"
             ,generation: "RX7000Series"
             ,price: 999
-            ,image: "https://m.media-amazon.com/images/I/71vGm7dSHoL.jpg"
+            ,image: "img/7900xtx.jpg"
         }
         ,{
             name: "RX7900XT"
             ,brand: "RADEONRX"
             ,generation: "RX7000Series"
             ,price: 899
-            ,image: "https://m.media-amazon.com/images/I/81ZBhhO35mL.jpg"
+            ,image: "img/7900xt.jpg"
         }
         ,{
             name: "RX7900GRE"
             ,brand: "RADEONRX"
             ,generation: "RX7000Series"
             ,price: 549
-            ,image: "https://m.media-amazon.com/images/I/81jooy0ipEL.jpg"
+            ,image: "img/7900gre.jpg"
         }
         ,{
             name: "RX7800XT" 
             ,brand: "RADEONRX"
             ,generation: "RX7000Series"
             ,price: 499
-            ,image: "https://m.media-amazon.com/images/I/61aQwrGeLCL.jpg"
+            ,image: "img/7800xt.jpg"
         }
         ,{
             name: "RX7700XT"
             ,brand: "RADEONRX"
             ,generation: "RX7000Series"
             ,price: 449
-            ,image: "https://m.media-amazon.com/images/I/81wAjnVdS5L.jpg"
+            ,image: "img/7700xt.jpg"
         }
         ,{
             name: "RX7600XT" 
             ,brand: "RADEONRX"
             ,generation: "RX7000Series"
             ,price: 329
-            ,image: "https://m.media-amazon.com/images/I/81XgnwQf-UL.jpg"
+            ,image: "img/7600xt.jpg"
         }
         ,{
             name: "RX7600"
             ,brand: "RADEONRX"
             ,generation: "RX7000Series"
             ,price: 269
-            ,image: "https://m.media-amazon.com/images/I/81QItJufypL.jpg"
+            ,image: "img/7600.jpg"
         }
         ,{
             name: "B570"
             ,brand: "INTELARC"
             ,generation: "BATTLEMAGE"
             ,price: 219
-            ,image: "https://m.media-amazon.com/images/I/71qcFgjH5zL.jpg"
+            ,image: "img/b570.jpg"
         }
         ,{
             name: "B580"
             ,brand: "INTELARC"
             ,generation: "BATTLEMAGE"
             ,price: 249
-            ,image: "https://www.notebookcheck.net/fileadmin/_processed_/c/b/csm_B580_14_727ef6f1b3.jpg"
+            ,image: "img/b580.jpg"
         }
     ]
     //nbg: name,brand,generation
