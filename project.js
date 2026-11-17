@@ -229,6 +229,8 @@ function inject(itemname){
             <h2 class="itemname" data-item="${itemname}">${itemname}</h2>
             <h3 class="price">$ ${graphicscardstore[index].price}</h3>
             <img src="${graphicscardstore[index].image}" alt="${itemname}"/>
+            <h4 class="Brand">${graphicscardstore[index].brand}</h4>
+            <h5 class="Generation">${graphicscardstore[index].generation}</h5>
             <button class="+cart">Add to Cart</button>
         </div>`,
     );
@@ -236,5 +238,12 @@ function inject(itemname){
 for(i=0; i<=graphicscardstore.length; i++){
     inject(graphicscardstore[i].name)
 }
-const button = document.querySelector(".+cart")
-button.addEventListener("click", addtocart(button.itemname))
+const cartadd = document.querySelector(".+cart")
+cartadd.addEventListener("click", ()=>{
+    addtocart(button.itemname)
+})
+const filter = document.querySelector(".filter")
+const Card = document.querySelector(".Card")
+filter.addEventListener("click", ()=>{
+    if()
+})
