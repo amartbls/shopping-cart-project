@@ -238,3 +238,5 @@ function inject(itemname){
 for(i=0; i<=graphicscardstore.length; i++){
     inject(graphicscardstore[i].name)
 }
+const cartaddbutton = document.querySelectorAll(".+cart")
+const Cards = document.querySelectorAll(".Card")
