@@ -197,6 +197,7 @@
         }
     ]
     //nbg: name,brand,generation
+    //p1-detail like name p2-textcontent
         function filterbynbg(parameter, parameter2){
             return graphicscardstore.filter(card=>card[parameter] === parameter2)
     }
@@ -238,20 +239,29 @@ function inject(itemname){
 for(i=0; i<=graphicscardstore.length; i++){
     inject(graphicscardstore[i].name)
 }
-const cartaddbutton = document.querySelectorAll(".+cart")
-const Cards = document.querySelectorAll(".Card")
-const filters = document.querySelectorAll(".filter")
+Cards.forEach(Card => {
+    const button = Card.querySelector(".+cart") 
+    button.addEventListener("click", ()=>{
+        addtocart(Card.itemname)
+    })
+});
+const Cards = document.querySelectorAll(".Card");
+const filters = document.querySelectorAll(".filter");
 filters.forEach(filter => {
-filter.addEventlistener("click", ()=>{
-    const category = filter.dataset.filter;
+filter.addEventListener("click", ()=>{
+    const category = filter.data.filtertype
     Cards.forEach(Card => {
-        if(category === "all"||Card.category.textContent === filter.textContent){
-            display: "flex";
+        let detail = Card.querySelector("." + category);
+        if(category === "all"){
+            Card.style.display = "flex";
+        }
+        else if(detail.textContent.trim() === filter.textContent){
+            Card.style.display = "flex";
         }
         else{
-            display: "none";
+            Card.style.display = "none";
         }
     });
     
-})
+});
 });
