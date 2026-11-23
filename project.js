@@ -239,23 +239,17 @@ function inject(itemname){
 for(i=0; i<=graphicscardstore.length; i++){
     inject(graphicscardstore[i].name)
 }
-Cards.forEach(Card => {
-    const button = Card.querySelector(".+cart") 
-    button.addEventListener("click", ()=>{
-        addtocart(Card.itemname)
-    })
-});
 const Cards = document.querySelectorAll(".Card");
 const filters = document.querySelectorAll(".filter");
 filters.forEach(filter => {
-filter.addEventListener("click", ()=>{
-    const category = filter.data.filtertype
+filter.addEventListener("click", function (){
+    const category = event.target.closest(".filter").getAttribute("data-item");
     Cards.forEach(Card => {
         let detail = Card.querySelector("." + category);
         if(category === "all"){
             Card.style.display = "flex";
         }
-        else if(detail.textContent.trim() === filter.textContent){
+        else if(detail && detail.textContent.trim() === filter.textContent.trim()){
             Card.style.display = "flex";
         }
         else{
