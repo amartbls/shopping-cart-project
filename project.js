@@ -196,8 +196,6 @@
             ,image: "img/b580.jpg"
         }
     ]
-    //nbg: name,brand,generation
-    //p1-detail like name p2-textcontent
         function filterbynbg(parameter, parameter2){
             return graphicscardstore.filter(card=>card[parameter] === parameter2)
     }
@@ -206,7 +204,7 @@
         }
     cart = []
     function addtocart(itemname){
-        cart.push(graphicscardstore.find((card)=>card.name === itemname))
+        cart.push(graphicscardstore.find((graphicscard)=>graphicscard.name === itemname))
     }
     function removefromcart(itemname){
         cart.splice(cart.indexOf(itemname),1)
