@@ -8,13 +8,14 @@ html body{
 #titleblock{
     display: flex;
     width: 100vw;
+    height: 10vh;
     text-align: left;
     background-color: bisque;
     align-items: center;
 }
 #title{
-    margin-left: 100px;
-    font-size: 100px;
+    margin-left: 10vw;
+    font-size: 2.5vw;
 }
 #filters{
     display: flex;
@@ -24,32 +25,34 @@ html body{
 }
 .filter{
     background-color: #2b5aa6;
-    border-radius: 10px;
-    width: 250px;
-    height: 100px;
+    border-radius: 0.5vw;
+    width: 10vw;
+    height: 5vh;
     color: white;
     font-family: "Syncopate", sans-serif;
     font-weight: 400;
     font-style: normal;
-    font-size: 25px;
+    font-size: 1vw;
 }
 #all{
     background-color: blue;
 }
 .container{
+    width: 100vw;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: space-evenly;
 }
 .Card{
-    border-radius: 25px ;
-    justify-content: space-evenly;
-    padding: 50px;
+    justify-content: center;
+    align-items: col;
+    border-radius: 2vw;
     display: flex;
     flex-wrap: wrap;
-    margin: 100px;
-    width: 400px;
-    height: 400px;
+    width: 20vw;
+    margin: 1vh;
+    height: 23vh;
     background-color: grey
 }
 .Card h2{
