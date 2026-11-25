@@ -225,11 +225,11 @@ function inject(itemname){
     container.insertAdjacentHTML(
         "beforeend",
         `<div class="Card">
-            <h2 class="itemname" data-item="${itemname}">${itemname}</h2>
-            <h3 class="price">$ ${graphicscardstore[index].price}</h3>
+            <h2 class="itemname" data-item="${itemname}">${itemname}-</h2>
+            <h3 class="price">$${graphicscardstore[index].price}</h3>
             <img src="${graphicscardstore[index].image}" alt="${itemname}"/>
             <h4 class="brand">${graphicscardstore[index].brand}</h4>
-            <h5 class="generation">${graphicscardstore[index].generation}</h5>
+            <h5 class="generation">-${graphicscardstore[index].generation}</h5>
             <button class="+cart">Add to Cart</button>
         </div>`,
     );
@@ -239,8 +239,8 @@ for(i=0; i<=graphicscardstore.length; i++){
 }
 const Cards = document.querySelectorAll(".Card");
 const filters = document.querySelectorAll(".filter");
-filters.forEach(filter => {
-filter.addEventListener("click", function (){
+filters.forEach(btn => {
+btn.addEventListener("click", function(event){
     const category = event.target.closest(".filter").getAttribute("data-item");
     Cards.forEach(Card => {
         let detail = Card.querySelector("." + category);
